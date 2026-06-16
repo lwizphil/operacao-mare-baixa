@@ -42,8 +42,7 @@ for link in links:
         gdown.download(
             url=url,
             output=PASTA_DOWNLOAD,
-            quiet=False,
-            fuzzy=True
+            quiet=False
         )
 
     except Exception as e:
