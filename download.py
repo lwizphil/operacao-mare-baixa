@@ -43,10 +43,9 @@ def baixar(link):
     try:
 
         arquivo = gdown.download(
-            url,
+            url=url,
             output=DOWNLOAD_FOLDER,
-            fuzzy=True,
-            quiet=True
+            quiet=False
         )
 
         return [link, "OK", arquivo]
